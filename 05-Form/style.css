@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    background-color: #fff;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #333;
+}
+.card > h1 {
+    text-align: center;
+    margin-bottom: 32px;
+}
+.card p {
+    line-height: 140%;
+    margin: 16px 0px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.form-group > label {
+    font-size: 18px;
+    font-weight: bold;
+}
+.form-group input {
+    font-size: 16px;
+    padding: 8px;
+    border: 2px solid #bbb;
+    border-radius: 4px;
+}
+.form-group.error input {
+    border-color: rgb(196, 53, 53);
+}
+.form-group.success input {
+    border-color: rgb(53, 196, 148);
+}
+.btn {
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    background: #000;
+    padding: 12px;
+}
+
+.btn:hover {
+    color: #000;
+    background: #fff;
+}
+
+.card.active {
+    animation: slide 250ms 125ms ease-in-out both;
+}
+.hide {
+    display: none;
+}
+.form {
+    overflow: hidden;
+    position: relative;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(200%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.75);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}

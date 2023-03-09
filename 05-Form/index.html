@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <form class="form" id="form">
+            <div class="card active" data-step="1">
+                <h1>Step 1</h1>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        placeholder="Username"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                        type="text"
+                        name="email"
+                        id="email"
+                        placeholder="Email"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Password"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="passwordCheck">Password check</label>
+                    <input
+                        type="password"
+                        id="passwordCheck"
+                        placeholder="Password check"
+                    />
+                </div>
+                <button type="submit" class="btn">註冊</button>
+            </div>
+            <div class="card hide" data-step="2">
+                <h1>Step 2</h1>
+                <p>
+                    您好， <br />
+                    為了確認您的電子郵件無誤，將寄一封郵件到您註冊的信箱，可以輸入認證號碼，或是
+                    點擊郵件中的網址，請在10分鐘內完成認證。
+                </p>
+                <div class="form-group">
+                    <label for="email-check">認證碼</label>
+                    <input type="text" id="email-check" placeholder="認證碼" />
+                </div>
+                <button class="btn">下一步</button>
+            </div>
+            <div class="card hide" data-step="3">
+                <h1>Step 3</h1>
+                <p>註冊成功！<br />感謝您註冊成為會員。</p>
+            </div>
+        </form>
+    </body>
+</html>
